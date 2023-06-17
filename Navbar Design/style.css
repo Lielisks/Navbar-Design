@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins' ,sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+   background: url(picture.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   min-height: 100vh;
+}
+
+/* Header Section */
+header
+{
+   position:fixed;
+   width: 100%;
+   left:0;
+   top:0;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 40px 80px;
+   transition: 0.5s;
+}
+
+header .logo
+{
+    position: relative;
+    font-weight: bold;
+    color:#fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+header .logo i
+{
+    font-size: 30px;
+    vertical-align: middle;
+    margin-right: 6px;
+    color: #99f2c8;
+}
+header ul
+{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    position: relative;
+    color:#fff;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 300;
+    font-size: 14px;
+    transition: 0.5s;
+}
+header ul li a:hover
+{
+    color:  #99f2c8;
+}
+
+/* Button Section */
+.btn
+{
+    position: relative;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    background:  #99f2c8;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: scale 0.2s ease;
+}
+
+.btn:hover 
+{
+    scale: 1.05;
+    color:#fff;
+}
+.btn:active 
+{
+    scale: 0.9;
+
+}
+/* Main Section */
+#main
+{
+    height: calc(100vh - 50px);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:#fff;
+}
+#main h1
+{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+#main p 
+{
+    font-weight: 400;
+    font-size: 15px;
+}
+/* Blob Section */
+.blob1
+{
+    position:absolute;
+    right:0;
+    top:0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    animation:animate 20s linear infinite;
+}
+.blob2
+{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    animation:animate2 20s linear infinite;
+} 
+.blob3
+{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    animation:animate3 20s linear infinite;
+}
+.blob4
+{
+    position:absolute;
+    right:0;
+    top:0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    animation:animate4 20s linear infinite;
+}
+.blob5
+{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    animation:animate5 20s linear infinite;
+}
+.blob6
+{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    animation:animate6 20s linear infinite;
+}
+.blob7
+{
+    position:absolute;
+    right:500px;
+    top:0;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.10);
+    animation:animate7 20s linear infinite;
+}
+
+@keyframes animate 
+{
+      50%
+      {
+        transform: translateX(-300px) translateY(-150px);
+      }
+} 
+@keyframes animate2
+{
+    50%
+    {
+        transform: translateX(500px) translateY(-200px);
+    }
+}
+@keyframes animate3
+{
+      50%
+      {
+        transform: translateX(100px) translateY(500px);
+      }
+} 
+@keyframes animate4
+{
+      50%
+      {
+        transform: translateX(-200px)translateY(500px);
+      }
+} 
+@keyframes animate5
+{
+      50%
+      {
+        transform: translate(-300px) translateY(-50px);
+      }
+} 
+
+@keyframes animate6
+{
+      50%
+      {
+        transform: translate(500px)  translateY(-250px);
+      }
+} 
+@keyframes animate7
+{
+      50%
+      {
+        transform: translateY(-250px) translateX(300px);
+      }
+} 
+
+@media (max-width:900px)
+{
+    header .logo
+    {
+        font-size: 12px;
+    }
+    header .logo i 
+    {
+        font-size: 20px;
+    }
+    header ul 
+    {
+        display:none;
+    }
+    .btn
+    {
+        color:#121212;
+        font-size: 12px;
+    }
+    #main h1
+    {
+        font-size: 20px;
+    }
+    #main p 
+    {
+        font-size: 14px;
+    }
+
+}
